@@ -1,0 +1,7 @@
+{
+  "name": "Men & Motors — Car Wash & Oil Change",
+  "description": "Official website for Men & Motors in Dera Ghazi Khan, Pakistan. Professional car washing and routine oil changes on Jampur Road.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

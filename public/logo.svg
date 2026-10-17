@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <!-- Gold Metallic Gradients matching original logo -->
+    <linearGradient id="goldRibbonLeft" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFEFA8" />
+      <stop offset="25%" stop-color="#FFD13B" />
+      <stop offset="60%" stop-color="#E2A605" />
+      <stop offset="100%" stop-color="#8E6300" />
+    </linearGradient>
+    <linearGradient id="goldRibbonRight" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFF5B8" />
+      <stop offset="30%" stop-color="#FFC928" />
+      <stop offset="70%" stop-color="#C58E00" />
+      <stop offset="100%" stop-color="#6E4800" />
+    </linearGradient>
+    <linearGradient id="goldRibbonCenter" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#BF8900" />
+      <stop offset="45%" stop-color="#FFD74D" />
+      <stop offset="80%" stop-color="#FFBE1A" />
+      <stop offset="100%" stop-color="#8C5C00" />
+    </linearGradient>
+    <!-- Drop Shadow -->
+    <filter id="logoShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+    <filter id="textBevel" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="1" dy="2" stdDeviation="1" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <!-- Background: Deep matte black / charcoal -->
+  <rect width="600" height="600" fill="#141414" />
+
+  <!-- Center Group -->
+  <g transform="translate(0, 0)">
+    <!-- THE GOLD M EMBLEM -->
+    <g transform="translate(180, 70)" filter="url(#logoShadow)">
+      <!-- Back Chevron Layer (Right and Center Fold) -->
+      <path d="M 68 85 L 120 32 L 172 85 L 172 170 C 172 195 152 215 127 215 C 102 215 82 195 82 170 L 82 108 L 120 70 L 146 96 L 146 170 C 146 180 138 188 127 188 C 116 188 108 180 108 170 L 108 122 L 68 85 Z" 
+            fill="url(#goldRibbonRight)" stroke="#684700" stroke-width="1.5" stroke-linejoin="round" />
+            
+      <!-- Front Interlocking Layer (Left Stem and High Peaks) -->
+      <path d="M 68 170 C 68 195 88 215 113 215 C 138 215 158 195 158 170 L 158 108 L 120 70 L 94 96 L 94 170 C 94 180 102 188 113 188 C 124 188 132 180 132 170 L 132 122 L 172 85 L 120 32 L 68 85 Z"
+            opacity="0.15" fill="#000" />
+            
+      <!-- Main Interlocking Continuous Monogram Ribbons -->
+      <!-- Left loop -->
+      <path d="M 15 88 L 68 32 L 120 85 L 120 170 C 120 195 100 215 75 215 C 50 215 30 195 30 170 L 30 100 L 56 100 L 56 170 C 56 180 64 188 75 188 C 86 188 94 180 94 170 L 94 102 L 68 76 L 35 110 L 15 88 Z"
+            fill="url(#goldRibbonLeft)" stroke="#5A3A00" stroke-width="1.5" stroke-linejoin="round" />
+
+      <!-- Outer sharp wings / angled facets that give the 3D ribbon look -->
+      <path d="M 68 32 L 120 85 L 172 32 L 225 88 L 205 110 L 172 76 L 146 102 L 146 170 C 146 195 166 215 191 215 C 216 215 236 195 236 170 L 236 100 L 210 100 L 210 170 C 210 180 202 188 191 188 C 180 188 172 180 172 170 L 172 85 L 120 32 Z"
+            fill="url(#goldRibbonCenter)" stroke="#7A5200" stroke-width="1.5" stroke-linejoin="round" />
+
+      <!-- Front Overlap Bevel highlights -->
+      <polygon points="68,32 120,85 110,95 68,52" fill="#FFEFA8" opacity="0.6" />
+      <polygon points="172,32 120,85 130,95 172,52" fill="#FFEFA8" opacity="0.4" />
+      <polygon points="15,88 68,32 68,48 28,98" fill="#FFF8D6" opacity="0.7" />
+      <polygon points="225,88 172,32 172,48 212,98" fill="#FFF8D6" opacity="0.7" />
+    </g>
+
+    <!-- TYPOGRAPHY SECTION -->
+    
+    <!-- 1. "MEN & MOTORS" -->
+    <text x="300" y="360" 
+          text-anchor="middle" 
+          font-family="'Barlow Condensed', 'Arial Black', Impact, sans-serif" 
+          font-weight="900" 
+          font-size="64" 
+          letter-spacing="2" 
+          fill="#FFFFFF"
+          filter="url(#textBevel)">
+      MEN &amp; MOTORS
+    </text>
+
+    <!-- 2. "CAR WASH & OIL CHANGE" -->
+    <text x="300" y="420" 
+          text-anchor="middle" 
+          font-family="'Barlow Condensed', Arial, sans-serif" 
+          font-weight="800" 
+          font-size="34" 
+          letter-spacing="3" 
+          fill="#F7F7F5">
+      CAR WASH &amp; OIL CHANGE
+    </text>
+
+    <!-- 3. "A PROJECT OF MUNRO CAFE" -->
+    <text x="300" y="468" 
+          text-anchor="middle" 
+          font-family="'Barlow Condensed', Arial, sans-serif" 
+          font-weight="800" 
+          font-size="25" 
+          letter-spacing="4" 
+          fill="#FFC928">
+      A PROJECT OF MUNRO CAFE
+    </text>
+  </g>
+</svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="goldGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE57F" />
+      <stop offset="35%" stop-color="#FFC928" />
+      <stop offset="70%" stop-color="#E5A700" />
+      <stop offset="100%" stop-color="#AA7700" />
+    </linearGradient>
+    <linearGradient id="goldGrad2" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFF2A3" />
+      <stop offset="40%" stop-color="#FFC928" />
+      <stop offset="75%" stop-color="#C98F00" />
+      <stop offset="100%" stop-color="#7A5200" />
+    </linearGradient>
+    <filter id="glow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#FFC928" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <!-- Background -->
+  <rect width="120" height="120" rx="20" fill="#141414" />
+  
+  <!-- Interlocking M Emblem -->
+  <g transform="translate(10, 12)" filter="url(#glow)">
+    <!-- Back chevron loop -->
+    <path d="M26,38 L50,14 L74,38 L74,70 C74,77 69,82 62,82 C55,82 50,77 50,70 L50,42 L26,66 L26,38 Z" 
+          fill="url(#goldGrad2)" stroke="#AA7700" stroke-width="1.2" stroke-linejoin="round" />
+    <!-- Front chevron loop interlacing -->
+    <path d="M26,70 C26,77 31,82 38,82 C45,82 50,77 50,70 L50,42 L74,18 L94,38 L94,66 L50,22 L38,34 L38,70 C38,73 36,75 34,75 C32,75 30,73 30,70 L30,42 L26,46 L26,70 Z" 
+          fill="url(#goldGrad1)" stroke="#5A3A00" stroke-width="1.2" stroke-linejoin="round" />
+  </g>
+</svg>

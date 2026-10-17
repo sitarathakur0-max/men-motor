@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@theme {
+  --color-matte-black: #191919;
+  --color-deep-charcoal: #101010;
+  --color-metallic-gold: #FFC928;
+  --color-gold-hover: #E5B21D;
+  --color-gold-muted: #8E7019;
+  --color-warm-white: #F7F7F5;
+  --color-steel-grey: #A6A6A6;
+  --color-soft-grey: #F0F0EE;
+
+  --font-display: "Barlow Condensed", sans-serif;
+  --font-body: "Plus Jakarta Sans", sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: #101010;
+  color: #F7F7F5;
+  overflow-x: hidden;
+}
+
+/* Custom utility for display headings */
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
+
+/* Smooth focus rings */
+*:focus-visible {
+  outline: 2px solid #FFC928;
+  outline-offset: 2px;
+}
